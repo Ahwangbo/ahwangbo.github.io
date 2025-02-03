@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML / CSS </title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family:'Times New Roman', Times, serif
+}
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid black;
+}
+header {
+    text-align: left;
+}
+h1 {
+    font-size: 36px;
+}
+nav {
+    border: thin solid black;
+    display:flex;
+    background-color: #333;
+}
+nav a {
+    color:white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;   
+}
+.side{
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;   
+}
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+#main {
+    border: thin solid black;
+}
+#address {
+    border: thin solid black;
+    padding: 7px;
+}
+footer {
+    border: thin solid black;
+    text-align: center;
+}
+@media screen and (max-width: 700px) {
+    #wrapper {
+        width: 100%;
+    }
+    .row {
+       flex-direction: column; 
+    }
+    nav {
+        flex-direction: column; 
+    }
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1> Basic HTML / CSS layout</h1>
+</header>
+<nav>
+    <a href="#">nav 1</a>
+    <a href="#">nav 2</a>
+    <a href="#">nav 3</a>
+    <a href="#">nav 4</a>
+    <a href="#">nav 5</a>
+</nav>
+<div class="row">
+    <div class="side">
+
+        <h2>
+            Important stuff About Me
+        </h2>
+        <p>
+            This is a paragraph. This is a paragraph. This is a paragraph.This is a paragraph. This is a paragraph.
+        </p>
+
+    </div>
+    <div class="main">
+        <h2>
+        Important stuff About Me
+        </h2>
+
+        <p>
+            This is a paragraph. This is a paragraph. This is a paragraph.This is a paragraph. This is a paragraph. 
+            This is a paragraph. This is a paragraph. This is a paragraph.This is a paragraph. This is a paragraph.
+            </p>
+            <p>
+                This is a paragraph. This is a paragraph. This is a paragraph.This is a paragraph. This is a paragraph. 
+                This is a paragraph. This is a paragraph. This is a paragraph.This is a paragraph. This is a paragraph.
+                </p>
+                <p>
+                    This is a paragraph. This is a paragraph. This is a paragraph.This is a paragraph. This is a paragraph. 
+                    This is a paragraph. This is a paragraph. This is a paragraph.This is a paragraph. This is a paragraph.
+                    </p>
+                    <p>
+                        This is a paragraph. This is a paragraph. This is a paragraph.This is a paragraph. This is a paragraph. 
+                        This is a paragraph. This is a paragraph. This is a paragraph.This is a paragraph. This is a paragraph.
+                    </p>
+    <div id="address">
+        Anne Hwangbo<br>
+        123 Lala Land<br>
+        Suit 100 <br>
+        312-555-1212<br>
+        <a href="mailto:a_hwangbo@mail.harpercollege.edu">a_hwangbo@mail.harpercollege.edu</a>
+    </div>
+</div>
+</div>
+<footer>
+    <p class="fnav">
+        <a href="#">nav 1</a>&nbsp;&nbsp;&nbsp;
+        <a href="#">nav 2</a>&nbsp;&nbsp;&nbsp;
+        <a href="#">nav 3</a>&nbsp;&nbsp;&nbsp;
+        <a href="#">nav 4</a>&nbsp;&nbsp;&nbsp;
+        <a href="#">nav 5</a>
+    </p>
+    <p>Cpoyright&copy;2025, Anne Hwangbo</p>
+</footer>
+</body>
+</html>
