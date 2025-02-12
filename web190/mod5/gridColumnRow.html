@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Anne Hwangbo
+     Web 190 Mod 5 lab 2
+     2/12/2025 -->
+<title>My First HTML5 Web Page</title>
+<meta charset="utf-8">
+<style>
+.grid-container {
+display: grid;
+justify-content: end;
+grid-template-columns: 50px 50px 50px;
+grid-gap: 10px;
+background-color: mediumblue;
+padding: 10px;
+}
+.grid-container > div {
+    background-color: mintcream;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.grid-container2 {
+display: grid;
+height: 300px;
+align-content: end;
+grid-template-columns: auto auto auto;
+grid-gap: 10px;
+background-color: cornflowerblue;
+padding: 10px;
+}
+.grid-container2 > div {
+background-color: cornsilk;
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+}
+</style>
+</head>
+<body>
+<h2> Web 190 - Module 5 Lab, part 2</h2>
+
+<h2>
+   Grid Area #1: This container demonstrates the justify-content - end  property
+</h2>
+
+<div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div> 
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+</div>
+<p>The justify-content -end property moves all the Grid Element to the right side of the Grid Container while maintaining the natural oder of the Grid Element</p>
+<hr>
+<h2>
+    Grid Area #2 This container demostrates the align-content - end property
+</h2>
+<div class="grid-container2">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div> 
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+</div>
+<p>The align-content - end property moves all of the Grid Elements to the bottom of the Grid Container while maintaining the natural order of the Grid Element </p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
