@@ -1,0 +1,79 @@
+
+body {
+    background-color: #009a5c;
+    max-width: 1900px;
+    font-family: 'Poor Story', cursive;
+}
+
+
+
+.wow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav {
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(255, 51, 204, .5);
+}
+
+nav a {
+    margin: 0 3vw;
+    padding: 2px 5px;
+    color: #00ffff
+}
+
+nav a:hover {
+    color: #FFB6C1
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #00ffff
+}
+
+footer a:active {
+    color: #000fff
+}
+
+footer a:hover {
+    Color: #FFB6C1
+}
+
+@media screen and (max-width: 980px) {
+    .contact .wow.wow {
+        flex-direction: column;
+    }
+
+    .contact form {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+.contact form,
+.contact section {
+    flex-basis: 45%;
+    padding: 15px;
+    margin: 0 1vw;
+}
+label {
+    display: block;
+    padding-top: 15px;
+}
+label[for="newsletter"] {
+    display: inline-block;
+}
