@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Anne Hwangbo WEB 150, ASN5 Anne's cafe -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FBW contact">
+  <title>contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact">
+  <nav class="wow">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html" class="current">About Us</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html" class="current">Contact</a>
+  </nav>
+  <header class="wow">
+    <h1>Contact</h1>
+  </header>
+  <main class="wow">
+    <div class="wow">
+      <form action="submit.php" method="post" name="contact_form" id="contact_form">
+        <h2>Please Fill Out The Form!</h2>
+        <label for="name"> Name:</label>
+        <input type="text" name="first name" id="name required">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <p id="radio-group">How Can We Help You?</p>
+        <div class="service" role="group" aria-labelledby="service">
+          <label for="service">
+            <input type="radio" name="service" id="service" value="yes">
+            Service
+          </label>
+          <label for="comment">
+            <input type="radio" name="comment" id="comment" value="yes">
+            Comment
+          </label>
+        </div>
+
+        <input type="checkbox" name="newsletter" id="newsletter" value="yes" checked>
+        <label for="newsletter">Email? Yes!!</label>
+        <label for="refer"> What service do you need?
+        </label>
+        <select name="refer" id="refer">
+          <option value="">-Select One-</option>
+          <option value="1"> Information about us</option>
+          <option value="2"> Our Menu</option>
+        </select>
+
+        <label for="comment">Comment:</label>
+        <textarea placeholder="Give us yourfeedback" name="comments" id="comments"></textarea>
+
+        <input type="submit" class="btn" value="submit" aria-label="submit">
+      </form>
+    </div>
+    <section>
+      <img src="thankyou.jpg" alt="thankyou">
+    </section>
+  </main>
+</main>
+<footer class="wow">
+  Anne's Restaurant<br>
+  450 fake street Fake<br>
+  Glenview IL 11458<br>
+   <br>
+  800-254-8596<br>
+   <br>
+  <div>
+  
+    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+  integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
